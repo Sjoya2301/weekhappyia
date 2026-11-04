@@ -1,0 +1,35 @@
+@media(min-width: 992px){
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.inicio{
+    background-color: #212220;
+padding: 0px;
+}
+.mainmenu{
+    background-color: #212220;
+}
+.detallada{
+    background-color: #f601e5;
+    padding: 0px;
+}
+.artistas{
+    background-color: #cbf601;
+}
+.experiencia{
+    background-color: #5e17eb;
+}
+.blog{
+    background-color: #01adfa;
+}
+.fotos{
+    background-color: #cbf601;
+}
+.final{
+background-color: #cbf601;
+}

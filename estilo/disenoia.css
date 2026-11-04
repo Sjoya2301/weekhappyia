@@ -1,0 +1,565 @@
+/* ==========================================
+   RESET Y ESTILOS GLOBALES
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Evita el scroll horizontal en celulares */
+    background-color: #121212;
+    color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==========================================
+   ENCABEZADO Y NAVEGACIÓN
+   ========================================== */
+.navbar {
+    background-color: #0b0b0b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    width: 100%;
+}
+
+.logo span {
+    font-family: 'Bungee', cursive, sans-serif;
+    color: #E600AC;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.mainmenu {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.mainmenu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.mainmenu a:hover {
+    color: #C0FF00;
+}
+
+/* ==========================================
+   HERO / INICIO
+   ========================================== */
+.inicio {
+    background-color: #0d0d0d;
+    text-align: center;
+    padding: 60px 20px 40px 20px;
+}
+
+.hero-title {
+    font-family: 'Bungee', cursive;
+    color: #E600AC;
+    font-size: clamp(32px, 6vw, 64px);
+    text-shadow: 0px 0px 20px rgba(230, 0, 172, 0.6);
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.hero-subtitle {
+    color: #ffffff;
+    font-size: clamp(16px, 3vw, 26px);
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.btn-compra {
+    display: inline-block;
+    background-color: #C0FF00;
+    color: #000000;
+    font-weight: 900;
+    padding: 14px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: clamp(14px, 2vw, 18px);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-compra:hover {
+    transform: scale(1.05);
+    background-color: #a8e000;
+}
+
+/* BANNER FECHA Y LUGAR */
+.banner-fecha {
+    background-color: #E600AC;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    font-weight: 900;
+    font-size: clamp(14px, 2.5vw, 22px);
+    letter-spacing: 1px;
+}
+
+/* ==========================================
+   SECCIÓN ARTISTAS (VERDE NEÓN)
+   ========================================== */
+.artistas {
+    background-color: #C0FF00;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.artistas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto 30px auto;
+}
+
+.card-artista {
+    background-color: #000;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-artista img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.nombre-artista {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Bungee', cursive;
+    font-size: 18px;
+    padding: 14px 5px;
+}
+
+.titulo-seccion.negro {
+    color: #000000;
+    font-family: 'Bungee', cursive;
+    font-size: clamp(22px, 4vw, 36px);
+}
+
+/* ==========================================
+   SECCIÓN AGENDA (FUCSIA)
+   ========================================== */
+.detallada {
+    background-color: #E600AC;
+    padding: 50px 20px;
+}
+
+.agenda-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.agenda-header {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.agenda-header h2 {
+    font-family: 'Bungee', cursive;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: clamp(20px, 3.5vw, 30px);
+    display: inline-block;
+}
+
+.agenda-items {
+    flex: 1.5;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.agenda-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.badge-hora {
+    background-color: #00B4D8;
+    color: #000000;
+    font-weight: 900;
+    padding: 10px 18px;
+    border-radius: 15px;
+    font-size: clamp(14px, 2vw, 18px);
+    white-space: nowrap;
+}
+
+.agenda-text h3 {
+    font-family: 'Bungee', cursive;
+    color: #ffffff;
+    font-size: clamp(16px, 2.2vw, 22px);
+}
+
+.agenda-text p {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* ==========================================
+   SECCIÓN PLANEA TU EXPERIENCIA (VIOLETA)
+   ========================================== */
+.experiencia {
+    background-color: #5E2BFF;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.exp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+}
+
+.exp-card {
+    background-color: #7B4BFF;
+    border-radius: 20px;
+    padding: 25px 15px;
+    color: #ffffff;
+}
+
+.exp-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.exp-card h3 {
+    font-family: 'Bungee', cursive;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.exp-card p {
+    font-size: 13px;
+}
+
+.titulo-seccion.blanco {
+    font-family: 'Bungee', cursive;
+    color: #ffffff;
+    font-size: clamp(22px, 4vw, 38px);
+}
+
+.subtitulo-seccion {
+    color: #ffffff;
+    font-size: clamp(14px, 2vw, 18px);
+}
+
+/* ==========================================
+   SECCIÓN ENTRADAS Y REGISTRO
+   ========================================== */
+.entradas-seccion {
+    background-color: #1a1a1a;
+    padding: 50px 20px;
+}
+
+.entradas-layout {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.boletos-grid {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card-boleto {
+    flex: 1;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    color: #000;
+}
+
+.card-boleto.general {
+    background-color: #C0FF00;
+}
+
+.card-boleto.vip {
+    background-color: #E600AC;
+    color: #fff;
+}
+
+.card-boleto h3 {
+    font-family: 'Bungee', cursive;
+    font-size: 22px;
+}
+
+.card-boleto .precio {
+    display: block;
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.registro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.registro-form h3 {
+    font-family: 'Bungee', cursive;
+    font-size: clamp(14px, 2.5vw, 18px);
+}
+
+.registro-form input {
+    background-color: #2b2b2b;
+    border: 1px solid #444;
+    padding: 15px;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 15px;
+    width: 100%;
+}
+
+.btn-registrarme {
+    background-color: #C0FF00;
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    font-family: 'Bungee', cursive;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.btn-registrarme:hover {
+    background-color: #a8e000;
+}
+
+/* ==========================================
+   SECCIÓN BLOG MUSICAL (AZUL)
+   ========================================== */
+.blog {
+    background-color: #00B4D8;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 30px auto 0 auto;
+}
+
+.card-blog {
+    background-color: #53d5f0;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.card-blog img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.blog-content h4 {
+    font-family: 'Bungee', cursive;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.blog-content p {
+    font-size: 13px;
+    color: #000;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.blog-content .fuente {
+    font-size: 11px;
+    color: #333;
+    display: block;
+}
+
+.btn-noticia {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    display: block;
+}
+
+/* ==========================================
+   REVIVE LA EXPERIENCIA (GALERÍA)
+   ========================================== */
+.fotos {
+    background-color: #121212;
+}
+
+.titulo-banner-verde {
+    background-color: #C0FF00;
+    color: #000;
+    font-family: 'Bungee', cursive;
+    text-align: center;
+    padding: 15px;
+    font-size: clamp(18px, 3.5vw, 32px);
+}
+
+.galeria-banner img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.galeria-grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+.final {
+    background-color: #C0FF00;
+    color: #000;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.footer-logo {
+    font-family: 'Bungee', cursive;
+    font-size: 24px;
+    color: #E600AC;
+}
+
+.footer-col h4 {
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* ==========================================
+   ADAPTACIÓN DISPOSITIVOS MÓVILES (MEDIA QUERIES)
+   ========================================== */
+@media (max-width: 768px) {
+    /* Menú superior en celular */
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    .mainmenu {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mainmenu a {
+        font-size: 13px;
+    }
+
+    /* Banner de fecha en celular */
+    .banner-fecha {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+        padding: 12px 15px;
+    }
+
+    /* Ajuste de agenda en celular */
+    .agenda-container {
+        flex-direction: column;
+    }
+
+    .agenda-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
+
+    /* Tarjetas de boletos verticales en celular */
+    .boletos-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Reordenamiento del pie de página */
+    .final {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
